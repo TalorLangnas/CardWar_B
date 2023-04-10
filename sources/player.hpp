@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <string>
-#include <vector>
 #include "card.hpp"
 
 using namespace std;
@@ -27,12 +26,10 @@ class Player{
     //Constructor
     Player();
     Player(string name);
-    //~Player();
     
-    //Demo methods   
+    // Methods:   
     
-    //string stacksize(); // return the amount of cards left.
-    int& stacksize(); // return the amount of cards left.
+    int& stacksize(); 
     int cardesTaken();
     void set_log(string);
     string get_log();

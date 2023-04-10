@@ -1,7 +1,6 @@
 #ifndef DECK_HPP
 #define DECK_HPP
 #include "card.hpp"
-#include <vector>
 
 using namespace std;
 using namespace ariel;

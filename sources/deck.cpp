@@ -1,13 +1,10 @@
 #include "deck.hpp"
 #include "card.hpp"
-#include <vector>
 #include <cstdlib>
 # include <bits/stdc++.h>
 
 using namespace std;
-//using namespace ariel;
-
-
+using namespace ariel;
 
 Deck::Deck()
 {   

@@ -28,7 +28,7 @@ Card::Card(int otherRank, int otherSuit){
 };
     
 
-//Methods:
+// Methods:
  Rank Card::getRank()
 {
     return rank;
@@ -118,7 +118,7 @@ string Card::suit_to_string(Suit s)
     }
 };
 
-//enum Rank{TWO = 2, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, ACE};
+// enum Rank{TWO = 2, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE};
 string Card::rank_to_string(Rank r)
 {
     switch (r)

@@ -32,13 +32,8 @@ using namespace ariel;
         draw_cards = "";
         lose_cards = "";
     }
-
-    // Player::~Player()
-    // {
-    //     delete[] record;
-    // }
     
-//Demo methods
+// Methods
 
 int& Player::stacksize()
 {
