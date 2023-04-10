@@ -17,17 +17,17 @@ TEST_CASE("The amount of cards before starting a game")
     CHECK(p2.cardesTaken() == 0);
 }
 
-TEST_CASE("The amount of cards after starting a game")
-{
-    Player p1("Alice");
-    Player p2("Bob");
-    Game game(p1, p2);
+ TEST_CASE("The amount of cards after starting a game")
+ {
+     Player p1("Alice");
+     Player p2("Bob");
+     Game game(p1, p2);
 
     CHECK(p1.stacksize() == 26);
     CHECK(p2.stacksize() == 26);
     CHECK(p1.cardesTaken() == 0);
     CHECK(p2.cardesTaken() == 0);
-}
+ }
 
 TEST_CASE("The card scheme at the end of the game")
 {
