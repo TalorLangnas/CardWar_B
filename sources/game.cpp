@@ -37,6 +37,11 @@ void Game::playAll()
 // play one turn.
 bool Game::playTurn()
 { 
+  if((p1.stacksize() == 0) || (p2.stacksize() == 0))
+  {
+    throw std::runtime_error("The Game is over, players have 0 cards");
+    return false;
+  }
   if(index_p1 > index_p2)
   {
     throw std::runtime_error("The Game is over, players have 0 cards");

@@ -61,13 +61,17 @@ int Card::compareTo(Card& other){
        {
         return -1;
        }
+       if((rank == ACE) && (other.getRank() == ACE))
+       {
+        return 0;
+       }
 
-       if ((rank == ACE && other.getRank() != TWO))
+       if ((rank == ACE) && (other.getRank() != TWO))
        {
         return 1;
        }
 
-       if ((other.getRank() == ACE && rank != TWO))
+       if ((other.getRank() == ACE) && (rank != TWO))
        {
         return -1;
        }
@@ -84,9 +88,8 @@ int Card::compareTo(Card& other){
         else
         {
             return -1;
-        }    
-       
-       
+        }  
+             
        }           
 
     
